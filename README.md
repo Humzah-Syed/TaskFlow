@@ -1,8 +1,8 @@
 # TaskFlow
 
-So basically this is a small backend where you POST a “job” and it doesn’t run in the HTTP request — it goes through Redis, a Celery worker picks it up, Postgres stores status + results. I was trying to copy how real systems do long stuff without blocking the API.
+TaskFlow is a small backend where you POST a “job” and it doesn’t run in the HTTP reques. It goes through Redis, a Celery worker picks it up, Postgres stores status + results. The thought being to copy how real systems do long stuff without blocking the API.
 
-Stack is FastAPI, Celery, Redis, Postgres, SQLAlchemy. Nothing fancy, just wired together in a way that actually runs.
+Stack is FastAPI, Celery, Redis, Postgres, SQLAlchemy. Nothing fancy, just wired together in a simple way.
 
 ## What it does (roughly)
 
